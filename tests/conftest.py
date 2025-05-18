@@ -14,13 +14,14 @@ def generate_user():
     UserCreationMethod.delete_user(access_token)
 
 
-@pytest.fixture    # ПОД ВОПРОСОМ
+@pytest.fixture
 def logged_in_user():
     body = generate_user_creation_body()
-    access_token = UserCreationMethod.create_user(body)
-    UserLoginMethod.user_login(body)
+    UserCreationMethod.create_user(body)
+    response = UserLoginMethod.user_login(body)
+    long_token = response.json()["accessToken"]
+    access_token = long_token.replace("Bearer ", "")
     yield body, access_token
-    UserLoginMethod.logout(refresh_token)
     UserCreationMethod.delete_user(access_token)
 
 

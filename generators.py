@@ -11,3 +11,8 @@ def generate_user_creation_body():
     }
 
 
+def generate_update_info():
+    return {
+        "email": fake.email(),
+        "name": fake.first_name()
+    }
