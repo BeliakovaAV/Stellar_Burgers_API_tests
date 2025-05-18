@@ -24,10 +24,6 @@ class ServerResponses:
                                   "message": "User already exists"}
     EMPTY_FIELD_CREATION_FAILURE = {"success": False,
                                     "message": "Email, password and name are required fields"}
-    USER_LOGIN_SUCCESS = {"success": True,
-                          "accessToken": "Bearer ...",
-                          "refreshToken": "",
-                          "user": {"email": "", "name": ""}}
     USER_LOGIN_FAILURE = {"success": False,
                           "message": "email or password are incorrect"}
     USER_UPDATE_SUCCESS = {"success": True,
@@ -52,7 +48,6 @@ class ServerResponses:
 
 
 class TestData:
-    REG_EMAIL = "testdata10@yandex.ru"
-    REG_PASSWORD = "1234567"
-    REG_NAME = "klara"
+    WRONG_EMAIL = "testdata10@yandex.ru"
+    WRONG_PASSWORD = "1234567"
     WRONG_INGREDIENT_HASH = "6037fhdsbj38dbd67fb63bf"
