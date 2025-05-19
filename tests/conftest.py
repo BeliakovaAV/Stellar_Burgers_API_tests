@@ -4,6 +4,7 @@ import allure
 from generators import generate_user_creation_body
 from methods.user_creation_meth import UserCreationMethod
 from methods.user_login_meth import UserLoginMethod
+from methods.order_creation_meth import OrderCreationMethod
 
 
 @pytest.fixture
@@ -25,15 +26,10 @@ def logged_in_user():
     UserCreationMethod.delete_user(access_token)
 
 
-@pytest.fixture  # ПОД ВОПРОСОМ
-def cleanup_order():
-    order_tracks = []
+@pytest.fixture
+def generate_order():
+    ingredients_ids = OrderCreationMethod.get_ingredient_ids()
+    response = OrderCreationMethod.create_order(ingredients_ids)
+    return response
 
-    def register_order_track(order_track):
-        order_tracks.append(order_track)
 
-    yield register_order_track
-
-    for order_track in order_tracks:
-        with allure.step('Удаляем созданное бронирование'):
-            OrderCreationMethod.cancel_order(order_track)

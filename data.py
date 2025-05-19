@@ -28,9 +28,6 @@ class ServerResponses:
                           "message": "email or password are incorrect"}
     USER_UPDATE_FAILURE = {"success": False,
                            "message": "You should be authorised"}
-    ORDER_CREATION_SUCCESS = {"name": "Краторный метеоритный бургер",  # ПРИМЕР
-                              "order": {"number": 6257},
-                              "success": True}
     ORDER_CREATION_FAILURE = {"success": False,
                               "message": "Ingredient ids must be provided"}
     USER_ORDERS_LIST_SUCCESS = {"success": True,
@@ -48,6 +45,4 @@ class ServerResponses:
 class TestData:
     WRONG_EMAIL = "testdata10@yandex.ru"
     WRONG_PASSWORD = "1234567"
-    UPDATED_EMAIL = "testdata20@yandex.ru"
-    UPDATED_NAME = "clara"
     WRONG_INGREDIENT_HASH = "6037fhdsbj38dbd67fb63bf"

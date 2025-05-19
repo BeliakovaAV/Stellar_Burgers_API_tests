@@ -2,7 +2,7 @@ import requests
 from data import Url
 
 
-class OrderCreationMeth:
+class OrderCreationMethod:
     @staticmethod
     def create_order(ingredients_ids):
         return requests.post(f'{Url.BASE_URL}{Url.ORDER_CREATION_URL}', json={"ingredients": ingredients_ids})
