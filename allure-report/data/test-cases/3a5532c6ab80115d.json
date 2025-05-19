@@ -1,0 +1,95 @@
+{
+  "uid" : "3a5532c6ab80115d",
+  "name" : "Тест на ошибку при пустом обязательном поле Email",
+  "fullName" : "tests.test_user_creation.TestCreateUser#test_empty_email_field_error",
+  "historyId" : "ff7fdf6af65ad36c31403ee727ff6c83",
+  "time" : {
+    "start" : 1747663840425,
+    "stop" : 1747663840800,
+    "duration" : 375
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1747663791290,
+      "stop" : 1747663791290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаём пользователя без email",
+      "time" : {
+        "start" : 1747663840425,
+        "stop" : 1747663840799,
+        "duration" : 374
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_creation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0807K0Q"
+  }, {
+    "name" : "thread",
+    "value" : "40372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_user_creation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a5532c6ab80115d.json",
+  "parameterValues" : [ ]
+}

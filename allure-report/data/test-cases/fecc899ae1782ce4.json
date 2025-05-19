@@ -1,0 +1,125 @@
+{
+  "uid" : "fecc899ae1782ce4",
+  "name" : "Тест на безуспешное создание заказа авторизованным пользователем без ингредиентов",
+  "fullName" : "tests.test_order_creation.TestOrderCreation#test_create_order_with_auth_no_ingredients",
+  "historyId" : "8af1e82cb135a3c15c4479c22eb5773e",
+  "time" : {
+    "start" : 1747663823139,
+    "stop" : 1747663829535,
+    "duration" : 6396
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "logged_in_user",
+    "time" : {
+      "start" : 1747663813036,
+      "stop" : 1747663823139,
+      "duration" : 10103
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1747663791290,
+      "stop" : 1747663791290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаем заказ без ингредиентов",
+      "time" : {
+        "start" : 1747663823140,
+        "stop" : 1747663829534,
+        "duration" : 6394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "logged_in_user::0",
+    "time" : {
+      "start" : 1747663829535,
+      "stop" : 1747663831511,
+      "duration" : 1976
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_order_creation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrderCreation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0807K0Q"
+  }, {
+    "name" : "thread",
+    "value" : "40372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_order_creation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fecc899ae1782ce4.json",
+  "parameterValues" : [ ]
+}

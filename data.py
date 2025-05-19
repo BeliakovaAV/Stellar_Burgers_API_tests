@@ -2,8 +2,6 @@ class Url:
     BASE_URL = 'https://stellarburgers.nomoreparties.site'
     USER_CREATION_URL = '/api/auth/register'
     USER_LOGIN_URL = '/api/auth/login'
-    USER_LOGOUT_URL = '/api/auth/logout' #ВОПРОС
-    TOKEN_UPDATE_URL = '/api/auth/token' #ВОПРОС
     USER_UPDATE_URL = '/api/auth/user'
     DELETE_USER_URL = '/api/auth/user'
     ORDER_CREATION_URL = '/api/orders'

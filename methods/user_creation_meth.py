@@ -14,6 +14,7 @@ class UserCreationMethod:
     def create_user_and_get_access_token(body):
         response = requests.post(f'{Url.BASE_URL}{Url.USER_CREATION_URL}', json=body)
         data = response.json()
+        assert response.status_code == 200
         return data["accessToken"], response
 
     @staticmethod

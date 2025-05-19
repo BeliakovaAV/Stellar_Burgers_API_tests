@@ -6,7 +6,7 @@
 ## <h>Когорта: #18</h>
 <hr>
 
-## <h>Project: Booking API</h>
+## <h>Project: Stellar Burger API</h>
 
 ## <h>Инструкция по запуску:</h>
 
@@ -27,18 +27,25 @@
 
 <h3 align="left" style="color:green">Project files and description:</h3>
 
-| Название файла          | Содержание файла               |
-|-------------------------|--------------------------------|
-| Tests dir               | Директория с тестами           |
-| test_create_bookings.py | Тесты на создание бронирования |
-| test_delete_booking.py  | Тесты на удаление бронирования |
-| conftest.py             | Фикстуры                       |
-| helpers.py              | Хэлпер для тела запросов       |
-| data.py                 | Файл с URL и body запросов     |
-| auth_methods.py         | http клиент к auth методам     |
-| booking_methods.py      | http клиент к booking методам  |
-| generators.py           | Генератор данных               |
-| requirements.txt        | Файл с зависимостями           |
-| allure_results.dir      | Папка с отчетами Allure        |
+| Название файла         | Содержание файла                        |
+|------------------------|-----------------------------------------|
+| Tests dir              | Директория с тестами                    |
+| test_order_creation.py | Тесты на создание заказа                |
+| test_user_creation.py  | Тесты на удаление бронирования          |
+| test_user_login.py     | Тесты на авторизацию пользователя       |
+| test_user_orders.py    | Тесты на получение заказов пользователя |
+| test_user_update.py    | Тесты на обновление данных пользователя |
+| conftest.py            | Фикстуры                                |
+| helpers.py             | Хэлперы для тела запросов               |
+| data.py                | Файл с URL и body запросов              |
+| Methods dir            | Директория с методами                   |
+| order_creation_meth.py | Методы создания заказа                  |
+| user_creation_meth.py  | Методы создания пользователя            |
+| user_login_meth.py     | Методы авторизации пользователя         |
+| user_orders_meth.py    | Методы получения заказов пользователя   |
+| user_update_meth.py    | Методы обновления данных пользователя   |
+| generators.py          | Генератор данных                        |
+| requirements.txt       | Файл с зависимостями                    |
+| allure_results.dir     | Папка с отчетами Allure                 |
 
 

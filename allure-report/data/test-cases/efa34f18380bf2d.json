@@ -1,0 +1,155 @@
+{
+  "uid" : "efa34f18380bf2d",
+  "name" : "Тест на успешное обновление информации о пользователе с авторизацией",
+  "fullName" : "tests.test_user_update.TestUserUpdate#test_successful_user_update",
+  "historyId" : "63db55cb247c271c690c8a45de0fe82a",
+  "time" : {
+    "start" : 1747663855722,
+    "stop" : 1747663856505,
+    "duration" : 783
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1747663791290,
+      "stop" : 1747663791290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "logged_in_user",
+    "time" : {
+      "start" : 1747663853806,
+      "stop" : 1747663855722,
+      "duration" : 1916
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Cоздаём пользователя и авторизуем его",
+      "time" : {
+        "start" : 1747663855724,
+        "stop" : 1747663855724,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Готовим новую информацию о пользователе",
+      "time" : {
+        "start" : 1747663855724,
+        "stop" : 1747663855724,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Обновляем информацию о пользователе",
+      "time" : {
+        "start" : 1747663855724,
+        "stop" : 1747663856504,
+        "duration" : 780
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "logged_in_user::0",
+    "time" : {
+      "start" : 1747663856505,
+      "stop" : 1747663858054,
+      "duration" : 1549
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_update"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserUpdate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0807K0Q"
+  }, {
+    "name" : "thread",
+    "value" : "40372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_user_update"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "efa34f18380bf2d.json",
+  "parameterValues" : [ ]
+}

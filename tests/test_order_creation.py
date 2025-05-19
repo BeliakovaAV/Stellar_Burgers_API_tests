@@ -16,11 +16,17 @@ class TestOrderCreation:
             "name": data["name"],
         }
 
-    @allure.title('Тест на безуспешное создание заказа неавторизованным пользователем')  # ВОПРОС
+    @allure.title('Тест на успешное создание заказа неавторизованным пользователем')
     def test_create_order_no_auth_failure(self, generate_order):
-        with allure.step('Создаем заказ с иннридиентами'):
+        with allure.step('Создаем заказ с ингредиентами'):
             order = generate_order
-        assert order.status_code == 401
+            data = order.json()
+        assert order.status_code == 200
+        assert data == {
+            "success": True,
+            "order": {"number": data["order"]["number"]},
+            "name": data["name"],
+        }
 
     @allure.title('Тест на безуспешное создание заказа авторизованным пользователем без ингредиентов')
     def test_create_order_with_auth_no_ingredients(self, logged_in_user):
