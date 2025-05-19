@@ -1,6 +1,5 @@
 import allure
 from methods.order_creation_meth import OrderCreationMethod
-import helpers
 from data import ServerResponses, TestData
 
 
@@ -21,7 +20,6 @@ class TestOrderCreation:
     def test_create_order_no_auth_failure(self, generate_order):
         with allure.step('Создаем заказ с иннридиентами'):
             order = generate_order
-            data = order.json()
         assert order.status_code == 401
 
     @allure.title('Тест на безуспешное создание заказа авторизованным пользователем без ингредиентов')

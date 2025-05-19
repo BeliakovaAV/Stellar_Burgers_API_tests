@@ -1,6 +1,5 @@
 import allure
 from methods.user_update_meth import UserUpdateMethod
-import helpers
 from generators import generate_update_info
 from data import ServerResponses
 
