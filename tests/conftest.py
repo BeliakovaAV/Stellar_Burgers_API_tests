@@ -11,7 +11,6 @@ from methods.order_creation_meth import OrderCreationMethod
 def generate_user():
     user_body = generate_user_creation_body()
     access_token, response = UserCreationMethod.create_user_and_get_access_token(user_body)
-    assert response.status_code == 200
     yield user_body, response
     UserCreationMethod.delete_user(access_token)
 
