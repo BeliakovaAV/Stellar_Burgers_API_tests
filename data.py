@@ -36,3 +36,4 @@ class TestData:
     WRONG_EMAIL = "testdata10@yandex.ru"
     WRONG_PASSWORD = "1234567"
     WRONG_INGREDIENT_HASH = "6037fhdsbj38dbd67fb63bf"
+    REQUIRED_USER_ORDER_FIELDS = ["number", "ingredients", "status", "createdAt", "updatedAt"]

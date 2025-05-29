@@ -1,6 +1,6 @@
 import allure
 from methods.user_orders_meth import OrderListMethod
-from data import ServerResponses
+from data import ServerResponses, TestData
 import helpers
 
 
@@ -14,8 +14,7 @@ class TestUserOrdersList:
             data = response.json()
         assert response.status_code == 200
         assert data["success"]
-        required_fields = ["number", "ingredients", "status", "createdAt", "updatedAt"]
-        assert helpers.validate_user_orders_structure(data["orders"], required_fields)
+        assert helpers.validate_user_orders_structure(data["orders"], TestData.REQUIRED_USER_ORDER_FIELDS)
 
     @allure.title('Тест на безуспешное получение списка заказов конкретного пользователя без авторизации')
     def test_user_orders_no_auth_failure(self):
