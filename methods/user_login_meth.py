@@ -1,6 +1,6 @@
 import requests
 from data import Url
-from .user_creation_meth import UserCreationMethod  # под вопросом
+
 
 
 class UserLoginMethod:
