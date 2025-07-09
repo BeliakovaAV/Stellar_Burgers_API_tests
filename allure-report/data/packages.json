@@ -1,0 +1,221 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_order_creation",
+      "children" : [ {
+        "name" : "Тест на успешное создание заказа авторизованным пользователем и ингредиентами",
+        "uid" : "97a86742630a0fce",
+        "parentUid" : "7e71995b79c8d995c74359017093b34f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663800396,
+          "stop" : 1747663800396,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на успешное создание заказа неавторизованным пользователем",
+        "uid" : "1c3ad1f10f59a95d",
+        "parentUid" : "7e71995b79c8d995c74359017093b34f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663813033,
+          "stop" : 1747663813033,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на безуспешное создание заказа авторизованным пользователем без ингредиентов",
+        "uid" : "fecc899ae1782ce4",
+        "parentUid" : "7e71995b79c8d995c74359017093b34f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663823139,
+          "stop" : 1747663829535,
+          "duration" : 6396
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на безуспешное создание заказа авторизованным пользователем c неправильным хэшем ингредиента",
+        "uid" : "3260655e33bd9412",
+        "parentUid" : "7e71995b79c8d995c74359017093b34f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663834557,
+          "stop" : 1747663835713,
+          "duration" : 1156
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7e71995b79c8d995c74359017093b34f"
+    }, {
+      "name" : "test_user_creation",
+      "children" : [ {
+        "name" : "Тест на успешное создание пользователя",
+        "uid" : "1e57497b50745294",
+        "parentUid" : "9312b93e7f0aae259af410ac3b662b4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663838188,
+          "stop" : 1747663838188,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на невозможность создания двух одинаковых пользователей",
+        "uid" : "64118e06c59cf457",
+        "parentUid" : "9312b93e7f0aae259af410ac3b662b4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663839521,
+          "stop" : 1747663840036,
+          "duration" : 515
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на ошибку при пустом обязательном поле Email",
+        "uid" : "3a5532c6ab80115d",
+        "parentUid" : "9312b93e7f0aae259af410ac3b662b4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663840425,
+          "stop" : 1747663840800,
+          "duration" : 375
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на ошибку при пустом обязательном поле Пароль",
+        "uid" : "325e4889b84be8da",
+        "parentUid" : "9312b93e7f0aae259af410ac3b662b4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663840802,
+          "stop" : 1747663841541,
+          "duration" : 739
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на ошибку при пустом обязательном поле Имя",
+        "uid" : "60b37c5655273490",
+        "parentUid" : "9312b93e7f0aae259af410ac3b662b4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663841543,
+          "stop" : 1747663842449,
+          "duration" : 906
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9312b93e7f0aae259af410ac3b662b4f"
+    }, {
+      "name" : "test_user_login",
+      "children" : [ {
+        "name" : "Тест на успешную авторизацию пользователя",
+        "uid" : "65c23d1fc5f69155",
+        "parentUid" : "3165a44f4bd4728879b59b5659da7e46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663842951,
+          "stop" : 1747663843402,
+          "duration" : 451
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на ошибку при авторизации с неправильным полем Пароль",
+        "uid" : "11e14883b37332dd",
+        "parentUid" : "3165a44f4bd4728879b59b5659da7e46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663845209,
+          "stop" : 1747663845956,
+          "duration" : 747
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на ошибку при авторизации с неправильным полем Email",
+        "uid" : "bf04a0a60ed5bcfa",
+        "parentUid" : "3165a44f4bd4728879b59b5659da7e46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663848170,
+          "stop" : 1747663848736,
+          "duration" : 566
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3165a44f4bd4728879b59b5659da7e46"
+    }, {
+      "name" : "test_user_orders",
+      "children" : [ {
+        "name" : "Тест на успешное получение списка заказов конкретного пользователя с авторизацией",
+        "uid" : "a37d695647c4015a",
+        "parentUid" : "bd5b9084a42e38a5fd1e2cde03b6f541",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663850778,
+          "stop" : 1747663851806,
+          "duration" : 1028
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на безуспешное получение списка заказов конкретного пользователя без авторизации",
+        "uid" : "aab25a3c2c22a7d0",
+        "parentUid" : "bd5b9084a42e38a5fd1e2cde03b6f541",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663853002,
+          "stop" : 1747663853804,
+          "duration" : 802
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bd5b9084a42e38a5fd1e2cde03b6f541"
+    }, {
+      "name" : "test_user_update",
+      "children" : [ {
+        "name" : "Тест на успешное обновление информации о пользователе с авторизацией",
+        "uid" : "efa34f18380bf2d",
+        "parentUid" : "6ad553b7bb0cb3cdfa72b7056bf0bc2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663855722,
+          "stop" : 1747663856505,
+          "duration" : 783
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Тест на безуспешное обновление информации о пользователе без авторизации",
+        "uid" : "698691cc9f7f4af8",
+        "parentUid" : "6ad553b7bb0cb3cdfa72b7056bf0bc2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747663858871,
+          "stop" : 1747663861481,
+          "duration" : 2610
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ad553b7bb0cb3cdfa72b7056bf0bc2c"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ]
+}
